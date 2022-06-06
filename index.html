@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Board</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="tooltip">
+      <h2>More Info</h2>
+      <p></p>
+    </template>
+    <header id="main-header">
+      <h1>Project Planner</h1>
+    </header>
+    <section id="active-projects">
+      <header>
+        <h2>Active Projects</h2>
+      </header>
+      <ul>
+        <li
+          id="p1"
+          data-extra-info="I am learning to react"
+          class="card"
+          draggable="true"
+        >
+          <h2>Udemy.com</h2>
+          <p>React - The Complete Guide (incl Hooks, React Router, Redux)
+          </p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+        <li
+          id="p2"
+          data-extra-info="I gained a lot of experience from this course"
+          class="card"
+          draggable="true"
+        >
+          <h2>Udemy.com</h2>
+          <p>JavaScript - The Complete Guide</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+      </ul>
+    </section>
+    <section id="finished-projects">
+      <header>
+        <h2>Finished Projects</h2>
+      </header>
+      <ul>
+        <li
+          id="p3"
+          data-extra-info="I became an N1 alumni"
+          class="card"
+          draggable="true"
+        >
+        
+          <h2>Tbilisi school of communication</h2>
+          <p>HTML, CSS and JavaScript</p>
+          <button class="alt">More Info</button>
+          <button>Activate</button>
+        </li>
+        
+      </ul>
+    </section>
+    <footer>
+      <!-- <button id="stop-analytics-btn">Stop Analytics</button> -->
+    </footer>
+  </body>
+</html>
